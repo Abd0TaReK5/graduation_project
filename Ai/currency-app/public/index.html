@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI‑Powered Pricing</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin: 0;
+      padding-top: 60px; /* space for banner */
+      background: #f5f5f5;
+    }
+
+    .banner {
+      background-color: #b30000;
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    .product {
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔴 Dynamic Event Banner (filled from backend) -->
+  <div id="event-banner" class="banner">Loading event info...</div>
+
+  
+  <h1>AI‑Driven Product Pricing</h1>
+
+  <button onclick="loadData()">Update Prices</button>
+  <button onclick="loadPrediction()">Get Sales Prediction</button>
+
+  <h2 id="rate">Rate: …</h2>
+  <h3 id="trend">Trend: …</h3>
+  <div id="list"></div>
+
+  <script>
+    async function loadEventMessage() {
+      try {
+        const res = await fetch('/api/event-message');
+        const data = await res.json();
+        document.getElementById('event-banner').innerText = data.message; // 👈 inject script message here
+      } catch (err) {
+        document.getElementById('event-banner').innerText = '🎁 Enjoy great deals on upcoming events!';
+      }
+    }
+  
+    async function loadData() {
+      const res = await fetch('/api/data');
+      const data = await res.json();
+      document.getElementById('rate').innerText = `USD→EGP: ${data.dollar_rate}`;
+      document.getElementById('list').innerHTML = data.products.map(p =>
+        `<div class="product"><strong>${p.name}</strong> – ${p.price_egp} EGP</div>`
+      ).join('');
+    }
+  
+    async function loadPrediction() {
+      const res = await fetch('/api/prediction');
+      const data = await res.json();
+      document.getElementById('event-banner').innerText = data.message;
+    }
+  
+    // 👇 Make sure this runs on page load
+    window.onload = () => {
+      loadData();
+      loadEventMessage(); // 👈 this fills the red banner
+    };
+  </script>
+  
+  
+</body>
+</html>

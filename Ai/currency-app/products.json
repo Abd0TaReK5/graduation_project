@@ -1,0 +1,5 @@
+[
+  { "name": "fridge", "price_usd": 5 },
+  { "name": "fan", "price_usd": 5 },
+  { "name": "mobile", "price_usd": 120 }
+]
