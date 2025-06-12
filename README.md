@@ -22,22 +22,22 @@ cd YOUR_REPO_NAME
 You need to install node_modules for both frontend and backend:
 
 Backend (api folder)
-cd api
-npm install
+- cd api
+- npm install
 
 
 Frontend (furniture-world folder)
-cd ../furniture-world
-npm install
+- cd ../furniture-world
+- npm install
 
 ---
 ### 3. Set Up the Database
--install xampp or laragon for Database management
--Open phpMyAdmin or any MySQL client.
+- install xampp or laragon for Database management
+- Open phpMyAdmin or any MySQL client.
 
-Import the SQL file (DB.sql):
+Import the SQL file:
 
-File path: DB.sql
+- File name: DB.sql
 
 This file contains all the necessary tables and data.
 
@@ -52,9 +52,9 @@ DB_NAME=furniscape
 
 ---
 #### 4. Run the Backend Server
-cd api
-npm start
-This will run the backend on: http://localhost:5000 (or any port defined in your code)
+- cd api
+- npm start
+- This will run the backend on: http://localhost:5000 (or any port defined in your code)
 
 ---
 
@@ -62,8 +62,8 @@ This will run the backend on: http://localhost:5000 (or any port defined in your
 
 In a new terminal:
 
-cd furniture-world
-npm start
+- cd furniture-world
+- npm start
 This will start the frontend (usually on http://localhost:3000) and connect to the backen
 
 ---
