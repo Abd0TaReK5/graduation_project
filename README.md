@@ -14,8 +14,8 @@ Follow the steps below to install and run the project locally.
 ---
 # 1. Clone the Repository
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/Abd0TaReK5/graduation_project.git
+cd graduation_project
 
 ---
 ## 2. Install Dependencies
@@ -51,29 +51,42 @@ DB_NAME=furniscape
 (Make sure to adjust credentials according to your setup)
 
 ---
-#### 4. Run the Backend Server
+## 4. Ai part 
+
+- cd api/currency-app
+- npm server.js (to run the backend server for updating the banner using the model)
+- open index.html(test Ai page) in public folder
+- press Update Prices and Get Sales Prediction
+- the banner should be updated based on the model
+- check Database for updated tables (currency,event_result)
+- now when you run the project the banner on the home page should be displayed and updated!!
+
+---
+#### 5. Run the Backend Server
 - cd api
 - npm start
 - This will run the backend on: http://localhost:5000 (or any port defined in your code)
 
 ---
-##### 5. Run the Frontend App
+##### 6. Run the Frontend App
 
 In a new terminal:
 
 - cd furniture-world
 - npm start
-This will start the frontend (usually on http://localhost:3000) and connect to the backen
+- This will start the frontend (usually on http://localhost:3000) and connect to the backen
 
 ---
 
+
+---
 # ✅ Everything Ready?
 You should now have:
 
-Backend running on port 5000
-Frontend running on port 3000
-Database imported and connected
-
+- Backend running on port 5000
+- Frontend running on port 3000
+- Database imported and connected
+- Ai currenct-app and banner-view is ready!!
 ---
 
 # 📄 License
