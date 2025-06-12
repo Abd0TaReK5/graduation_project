@@ -1,6 +1,6 @@
-#  🛋️ Heavenly Touch - Fullstack Project
+#  🛋️ Heavenly Touch - Furniture Project
 
-This is a fullstack furniture shop project built with Node.js for the backend and a separate frontend using modern JavaScript (React or any other JS framework).  
+This is a fullstack furniture shop project built with Node.js for the backend and a separate frontend using React framework.  
 Follow the steps below to install and run the project locally.
 
 ---
@@ -9,7 +9,7 @@ Follow the steps below to install and run the project locally.
 
 - Node.js (v18 or higher recommended)
 - npm (comes with Node.js)
-- MySQL or MariaDB
+- MySQL or MariaDB (xampp or any DB application)
 
 ---
 # 1. Clone the Repository
@@ -57,8 +57,7 @@ DB_NAME=furniscape
 - This will run the backend on: http://localhost:5000 (or any port defined in your code)
 
 ---
-
-###### 5. Run the Frontend App
+##### 5. Run the Frontend App
 
 In a new terminal:
 
