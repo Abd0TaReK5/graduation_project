@@ -1,7 +1,10 @@
 #  🛋️ Heavenly Touch - Furniture Project
 
-This is a fullstack furniture shop project built with Node.js for the backend and a separate frontend using React framework.  
-Follow the steps below to install and run the project locally.
+Welcome to Heavenly Touch, an innovative e-commerce platform for furniture retail.We combine cutting-edge technology with user-centric design. Explore our wide range of furniture and enjoy special offers.
+Heavenly Touch features secure user and admin signup pages. A promotional banner highlights new collections and discounts. Users can browse furniture categories like dining, living, and bedroom.
+
+
+
 
 ---
 
@@ -60,6 +63,7 @@ DB_NAME=furniscape
 - the banner should be updated based on the model
 - check Database for updated tables (currency,event_result)
 - now when you run the project the banner on the home page should be displayed and updated!!
+- close the server...
 
 ---
 #### 5. Run the Backend Server
@@ -74,10 +78,7 @@ In a new terminal:
 
 - cd furniture-world
 - npm start
-- This will start the frontend (usually on http://localhost:3000) and connect to the backen
-
----
-
+- This will start the frontend (usually on http://localhost:3000) and connects to the backend
 
 ---
 # ✅ Everything Ready?
