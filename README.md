@@ -58,7 +58,7 @@ DB_NAME=furniscape
 
 ---
 
-###### 5.Run the Frontend App
+###### 5. Run the Frontend App
 
 In a new terminal:
 
@@ -68,7 +68,7 @@ This will start the frontend (usually on http://localhost:3000) and connect to t
 
 ---
 
-✅ Everything Ready?
+# ✅ Everything Ready?
 You should now have:
 
 Backend running on port 5000
@@ -77,5 +77,5 @@ Database imported and connected
 
 ---
 
-📄 License
+# 📄 License
 This project is for educational and commercial purposes. Free to modify and extend.
